@@ -12,7 +12,7 @@ import {
   Navbar,
 } from "react-bootstrap";
 import "./style.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -46,11 +46,11 @@ const Header = () => {
                   </div>
                   <AiFillDelete fontSize="20px" style={{ cursor: "pointer" }} />
                 </span>
-                <a>
+                <Link to="/shopping-cart">
                   <Button style={{ width: "95%", margin: "0 10px" }}>
                     Go To Cart
                   </Button>
-                </a>
+                </Link>
 
                 <span style={{ padding: 10 }}>Cart is Empty!</span>
               </DropdownMenu>
